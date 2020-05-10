@@ -41,8 +41,8 @@ ENV JAVA_OPTIONS="-Dquarkus.http.host=0.0.0.0 -Dquarkus.http.port=80 -Djava.util
 ll .
 ll my-quarkus-project
 
-COPY my-quarkus-project/target/lib/* /deployments/lib/
-COPY my-quarkus-project/target/*-runner.jar /deployments/app.jar
+COPY /my-quarkus-project/target/lib/* /deployments/lib/
+COPY /my-quarkus-project/target/*-runner.jar /deployments/app.jar
 
 EXPOSE 80
 USER 1001
